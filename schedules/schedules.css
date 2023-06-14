@@ -207,7 +207,18 @@ grid-template-columns: 50.5% 50%;
     margin-bottom: 100px;
 
 }
-.schedule-page{
+.schedule-page-right{
+    width: 25vw;
+    padding:10px 20px;
+    height: 12vw;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+    background: #545454;
+}
+.schedule-page-left{
     width: 25vw;
     padding:10px 20px;
     height: 12vw;
@@ -260,4 +271,27 @@ grid-template-columns: 50.5% 50%;
     width: 100px ;
     height: 4px;
     background: black;
+}
+
+
+/* making animation for every events  */
+/* .schedule-page-right , .schedule-page-stroke-right {
+    transition: 1s ease;
+    transform: translateX(-400%);
+}
+.schedule-page-left , .schedule-page-stroke-left{
+    transition: 1s ease;
+    transform: translateX(400%);
+} */
+.box-right{
+    transform: translateX(-170%);
+    transition: 1s;
+
+}
+.box-left{
+    transition: 1s;
+    transform: translateX(170%);
+}
+.show{
+    transform: translateX(0%);
 }
