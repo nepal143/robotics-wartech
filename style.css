@@ -14,9 +14,7 @@
 header{
     width: 100vw;
     height: 100vh;
-    /*z-index: -1;*/
     background-image: url(data/landing-page-background.png);
-    /* overflow: hidden; */
     background-size: cover;
     
 }
@@ -77,9 +75,9 @@ nav {
 
 .wartech div {
 
-    font-size: 7rem;
+    font-size: 8vw;
     color: white;
-    letter-spacing: 40px;
+    letter-spacing: 20px;
     -webkit-text-fill-color: 
     transparent;
     line-height: .9em;
@@ -93,7 +91,7 @@ nav {
 
 
 .title-2 {
-    translate: 45px;
+    translate: 3vw;
     mix-blend-mode:soft-light;
 }
 .title-1{
@@ -102,32 +100,10 @@ nav {
 }
 
 .title-center {
-    translate: 90px;
+    translate: 6vw;
     font-weight: 500;
 }
 
-/* making the website responsive */
 
-@media screen and (max-width:1018px) {
-    
-    .wartech div{
-        font-size: 5rem;
-    }
-}
-@media screen and (max-width:875px) {
-    
-    .wartech div{
-        font-size: 3rem;
-        letter-spacing: 20px;
-    }
-}
-@media screen and (max-width:576px) {
-    
-    .wartech div{
-        font-size: 2rem;
-        letter-spacing: 10px;
-        /* line-height: 1.3em; */
-    }
-}
 
 
