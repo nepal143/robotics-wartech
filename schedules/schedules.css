@@ -8,7 +8,7 @@
     font-family: robotics-original;
 }
 body{
-    background-image: url(../background-image-for-whole-website.png) ;
+    background-image: url(background-image-for-whole-website.png) ;
     font-size: 100%;
     background-repeat: no-repeat;
 
@@ -144,8 +144,32 @@ nav {
     background-color: black;
     width: 4px;
     translate:  0 -30px;
-    height: 150vh;
+    height: 800px;
     margin: 0 calc(50vw - 4px);
+}
+.linebottom{
+    margin-top: 800px;
+    width: 500px;
+    translate: -48px -2px;
+
+}
+.linebottom-left{
+    display: inline-block;
+    width: 50px;
+    background-color: #000000;
+    height:50px;
+    border-radius: 0 0 100% 0;
+    clip-path:polygon(0% 100%,61% 59%, 100% 0, 100% 100%) ;
+}
+.linebottom-right{
+    margin-left: -4px;
+    display: inline-block;
+    width: 50px;
+    background-color: #000000;
+    height:50px;
+    border-radius: 0 0 0 100% ;
+    clip-path:polygon(0% 0%,0% 100% ,100% 100% , 42% 60%) ;
+    /* clip-path:  */
 }
 
 /* the events section  */
@@ -202,6 +226,17 @@ grid-template-columns: 50.5% 50%;
     height: 12vw;
     border: 4px solid black;
 }
+.quoteright-top{
+    position: absolute;
+    top: -30px;
+    left: -10px;
+}
+.quoteright-bottom{
+    position: absolute;
+    bottom: -50px;
+    right: -10px;
+}
+
 .schedule-page-stroke-left{
     position: absolute;
     width: 25vw;
@@ -210,16 +245,16 @@ grid-template-columns: 50.5% 50%;
     height: 12vw;
     border: 4px solid black;
 }
-.venue{
-    font-size: 1.5em;
+.venuer , .timer , .eventnamer{
+    width: 100%;
+    font-size: 1.7em;
+    text-align:right;
 }
-.time{
-    font-size: 2em;
+.venuel , .timel , .eventnamel{
+    width: 100%;
+    font-size: 1.7em;
+    text-align:left;
 }
-.eventname{
-    font-size: 2em;
-}
-
 .line{
     /* width: calc(100% - 25vw); */
     width: 100px ;
