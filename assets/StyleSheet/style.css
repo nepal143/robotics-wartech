@@ -108,7 +108,6 @@ nav {
     .title-center{
         
         translate: 0;
-        text-shadow: 2px -2px;
     }
     .wartech{
         height: 80vh;
@@ -117,6 +116,9 @@ nav {
 
 /* ----making movile view for the landing page  */
 @media screen and (max-width:800px){
+    .links{
+        display: none;
+    }
     .wartech{
         translate: -20;
         flex-wrap: nowrap;
@@ -125,19 +127,19 @@ nav {
     .wartech div{
         word-wrap: break-word;
         width: 0;
-        font-size: 3em;
+        font-size: 3.5em;
         line-height: 10vh;
         
     }
     .left1{
-        translate:-20px  ;
+        translate:-20px 10px ;
     }
     .left2{
         translate: -20px -30px;
         mix-blend-mode:soft-light;
     }
     .right1{
-        translate: -20px ;
+        translate: -20px 10px;
     }
     .right2{
         translate: -20px -30px;
@@ -145,7 +147,9 @@ nav {
     }
     
     .title-center {
-        translate: -20px -60px;
+        text-shadow: 2px -2px;
+        translate: -20px 30px;
+     
         font-weight: 500;
     }
 
