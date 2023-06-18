@@ -1,0 +1,172 @@
+@font-face {
+    font-family: robotics-original;
+    src: url(/fonts/nasalization-rg.otf);
+}
+* {
+    font-family: robotics-original  ;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+body{
+    background-image: url(/assets/static/background-image-for-whole-website.png) ;
+    font-size: 100%;
+    background-repeat: no-repeat;
+
+    background-size:cover;
+    /* overflow-x: hidden  ; */
+    overflow-y: hidden;
+}
+
+
+nav {
+    width: 100%;
+    z-index: 3;
+    display: grid;
+    position: fixed;
+    place-items: center;
+}
+
+.container {
+    width: 90%;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+#logo{
+    width: 100px;
+    height: 900px;
+    /* color: black; */
+    font-size: 100px;
+    /* background-color: black; */
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+/* nav ends */
+
+/* main content */
+
+
+
+.about h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: vw;
+
+}
+
+#content{
+    margin-top: 50px;
+    width: 60vw;
+    font-size: 20px;
+   text-align:justify;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    flex-wrap: wrap;
+    
+}
+
+/* main-content-2 */
+
+.goal{
+    display: flex;
+    bottom: 10px;
+    margin-bottom: 200px;
+    width: 100vw;
+    height: 30vh;
+    justify-content: center;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 150px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.395),#ffffff);
+    
+
+}
+
+.line{
+    width: 10px;
+    height: 110px;
+    margin-top: 70px;
+    background-color: black;
+}
+
+.mission{
+    margin-left: 20px;
+    margin-top: 80px;
+}
+
+.vision{
+    margin-left: 20px;
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+/* mediaqueries */
+
+@media screen and (max-width:1122px) {
+
+    #content{
+        margin-left: 200px;
+
+
+    }
+   .line{
+        height: 135px;
+    }
+    
+}
+
+@media screen and (max-width:730px) {
+
+    #content{
+        margin-left: 150px;
+    }
+   .line{
+        height: 180px;
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 20px;
+    }
+   .vision{
+        margin-top: 60px;
+    }
+
+    .mission{
+        margin-top: 60px;
+    }
+    
+}
+
+ @media screen and (max-width:510px) {
+    #content{
+        margin-left:90px;
+        font-size: 15px;
+    }
+
+
+    .line{
+        margin-left: -5px;
+        width: 40px;
+    }
+    .vision{
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    .mission{
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+} 
