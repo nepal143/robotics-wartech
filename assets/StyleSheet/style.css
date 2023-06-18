@@ -127,19 +127,19 @@ nav {
     .wartech div{
         word-wrap: break-word;
         width: 0;
-        font-size: 3.5em;
+        font-size: 4.5em;
         line-height: 10vh;
         
     }
     .left1{
-        translate:-20px 10px ;
+        translate:-20px 30px ;
     }
     .left2{
         translate: -20px -30px;
         mix-blend-mode:soft-light;
     }
     .right1{
-        translate: -20px 10px;
+        translate: -20px 30px;
     }
     .right2{
         translate: -20px -30px;
@@ -148,11 +148,10 @@ nav {
     
     .title-center {
         text-shadow: 2px -2px;
-        translate: -20px 30px;
+        translate: -20px 10px;
      
         font-weight: 500;
     }
-
 }
 
 
