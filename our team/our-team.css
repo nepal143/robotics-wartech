@@ -10,7 +10,7 @@
 
 /* applying background image to while page  */
 body{
-    background-image: url(../data/background-image-for-whole-website.png) ;
+    background-image: url(/assets/static/background-image-for-whole-website.png) ;
     background-repeat: no-repeat;
     width: 100vw;
     background-size:cover;

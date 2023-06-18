@@ -10,6 +10,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    overflow-x: hidden;
+}
 /* applying wartech background image to the whole website  */
 header{
     width: 100vw;
@@ -67,8 +70,8 @@ nav {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
     margin: auto;
+    width: 80%;
     padding-top: 80px;
 }
 
@@ -102,9 +105,6 @@ nav {
 }
 
 @media  screen and (max-width:500px) {
-    .title-1 , .title-2{
-        display: none;
-    }
     .title-center{
         
         translate: 0;
@@ -114,6 +114,43 @@ nav {
         height: 80vh;
     }
 }
+
+/* ----making movile view for the landing page  */
+@media screen and (max-width:800px){
+    .wartech{
+        translate: -20;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .wartech div{
+        word-wrap: break-word;
+        width: 0;
+        font-size: 3em;
+        line-height: 10vh;
+        
+    }
+    .left1{
+        translate:-20px  ;
+    }
+    .left2{
+        translate: -20px -30px;
+        mix-blend-mode:soft-light;
+    }
+    .right1{
+        translate: -20px ;
+    }
+    .right2{
+        translate: -20px -30px;
+        mix-blend-mode:soft-light;
+    }
+    
+    .title-center {
+        translate: -20px -60px;
+        font-weight: 500;
+    }
+
+}
+
 
 
 
