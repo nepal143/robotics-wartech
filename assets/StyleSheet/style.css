@@ -6,22 +6,25 @@
 
 /* applying margin and padding 0 and font family to whole website */
 * {
-    font-family: robotics-original  ;
+    font-family: robotics-original;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
+
 /* applying wartech background image to the whole website  */
-header{
+header {
     width: 100vw;
     height: 100vh;
     background-image: url(../static/landing-page-background.png);
     background-size: cover;
-    z-index: 1 ;
+    z-index: 1;
     overflow: hidden;
 }
+
 /* creating a radial gradient on the header  */
 .radial-gradient {
     background: radial-gradient(rgba(64, 75, 82, 0), rgba(100, 106, 109, 100%));
@@ -59,6 +62,7 @@ nav {
     color: white;
     margin: 20px;
 }
+
 /* navbar ends here */
 
 
@@ -80,23 +84,26 @@ nav {
     font-size: 8vw;
     color: white;
     letter-spacing: 20px;
-    -webkit-text-fill-color: 
-    transparent;
+    -webkit-text-fill-color:
+        transparent;
     line-height: .9em;
     -webkit-text-stroke-width: 1px;
     transition: .5s;
 }
-.wartech div:hover{
+
+.wartech div:hover {
     text-shadow: 10px -4px;
 }
+
 /* blending the text and translate */
 .title-2 {
     translate: 3vw;
-    mix-blend-mode:soft-light;
+    mix-blend-mode: soft-light;
 }
-.title-1{
+
+.title-1 {
     color: #d9d9d9;
-    mix-blend-mode:difference;
+    mix-blend-mode: difference;
 }
 
 .title-center {
@@ -104,56 +111,117 @@ nav {
     font-weight: 500;
 }
 
-@media  screen and (max-width:500px) {
-    .title-center{
-        
+@media screen and (max-width:500px) {
+    .title-center {
+
         translate: 0;
     }
-    .wartech{
+
+    .wartech {
         height: 80vh;
     }
 }
 
 /* ----making movile view for the landing page  */
-@media screen and (max-width:800px){
-    .links{
+@media screen and (max-width:800px) {
+    .links {
         display: none;
     }
-    .wartech{
+
+    .wartech {
         translate: -20;
         flex-wrap: nowrap;
         justify-content: space-between;
     }
-    .wartech div{
+
+    .wartech div {
         word-wrap: break-word;
         width: 0;
         font-size: 4.5em;
         line-height: 10vh;
-        
+
     }
-    .left1{
-        translate:-20px 30px ;
-    }
-    .left2{
-        translate: -20px -30px;
-        mix-blend-mode:soft-light;
-    }
-    .right1{
+
+    .left1 {
         translate: -20px 30px;
     }
-    .right2{
+
+    .left2 {
         translate: -20px -30px;
-        mix-blend-mode:soft-light;
+        mix-blend-mode: soft-light;
     }
-    
+
+    .right1 {
+        translate: -20px 30px;
+    }
+
+    .right2 {
+        translate: -20px -30px;
+        mix-blend-mode: soft-light;
+    }
+
     .title-center {
         text-shadow: 2px -2px;
         translate: -20px 10px;
-     
+
         font-weight: 500;
     }
+
 }
 
+/* -------------------------------------main section starts  here ------------------------------ */
+main{
+    background-image: url(/assets/static/background-image-for-whole-website.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* -----------about section starts here ----------- */
+.about {
+    /* text-align: center; */
+}
 
+.about-heading {
+    text-align: center;
+    font-size: 8vw;
+    margin: 10vw 0 20px 0;
+}
 
+.about-para {
+    text-align: left;
+    margin: auto;
+    width: 90%;
+    font-size: 2.5vw;
+    margin-bottom: 8vw;
+    /* text-align: center; */
+}
 
+.goal {
+    display: flex;
+    text-align: center;
+    width: 90%;
+    padding: 20px 0;
+    border-radius: 15px;
+    margin: auto;
+    background: linear-gradient(rgb(116, 116, 116), rgb(0, 0, 0, 0));
+}
+
+.goal h1 {
+    font-size: 4vw;
+}
+
+.goal p {
+    font-size: 1.5vw
+}
+
+.mission,
+.vision {
+    margin: 0 20px;
+}
+
+.about-line {
+    width: 13px;
+    /* height: 80%; */
+    background-color: black;
+}
+
+/* -----------------about section ends here---------------- */
