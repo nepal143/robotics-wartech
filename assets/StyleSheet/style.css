@@ -225,3 +225,59 @@ main{
 }
 
 /* -----------------about section ends here---------------- */
+.event_container{
+    margin-top: 50px;
+}
+.event_heading{
+    font-size:10vw;
+    margin-left: 10vw;
+    transform: rotate(-9deg);
+}
+.events_card_container{
+    margin-top: 10vw;
+    width: 100%;
+    padding-bottom: 10vw;
+}
+.evnet_card{
+    width: 60vw;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 30vh; */
+    /* min-height: 30vw;     */
+    
+    margin :15vw 10vw 10px auto;
+}
+@media screen and (max-width:1000px) {
+    .evnet_card{
+    margin :5vw 10vw 10px auto;
+    }
+    
+}
+
+.EventCardBorder{
+    position: absolute;
+    width: 60vw;
+    scale: 1.2 ;
+
+}
+.event_content{
+    margin: 0 2vw 0 1vw;
+} 
+.event_name{
+    font-size: 1.5vw;
+    
+}
+.event_right_content{
+    /* margin-right: 5vw; */
+}
+.event_discriptoin{
+
+}
+.discription p{
+    font-size: 1.5vw;
+}
+.event_image img{
+    width:30vw;
+}
