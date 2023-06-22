@@ -211,7 +211,7 @@ main {
 }
 
 .goal p {
-    font-size: 1.5vw
+    font-size: 2vw
 }
 
 .mission,
@@ -282,6 +282,10 @@ main {
     /* min-height: 30vw;     */
 
     margin: 15vw 10vw 10px auto;
+}
+.evnet_card:hover{
+    translate: -20px 0 ;
+    transition:0.4s;
 }
 
 @media screen and (max-width:1000px) {
