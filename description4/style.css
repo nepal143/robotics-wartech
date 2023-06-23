@@ -1,0 +1,427 @@
+@font-face {
+    font-family: robotics-original;
+    src: url(nasalization-rg.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: robotics-original;
+}
+ body{
+    background-image: url(background-image-for-whole-website.png) ;
+    font-size: 100%;
+    background-repeat: no-repeat;
+   
+    background-size:cover;
+}
+/* navbar starts here  */
+nav {
+    width: 100%;
+    margin-top: -180px;
+    z-index: 3;
+    display: grid;
+    position: fixed;
+    place-items: center;
+}
+
+.container {
+    width: 90%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.logo h1 {
+    width: 60px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+} 
+
+/* /* discription style */
+
+
+.photobg{
+    
+    width: 25vw;
+    height: 24vw;
+    border: 3px solid black;
+    margin: -34px;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 188px;
+    margin-left: 120px;
+  } 
+
+  .img{
+    width:25vw;
+    height: 40vh;
+    margin-left: 160px;
+    margin-top: -8000px;
+  }
+
+  .content{
+    margin-left: 600px;
+    margin-top: -300px;
+  }
+
+  .content h1{
+    font-size: 4rem;
+  }
+
+  .content p{
+    font-size: 1.5vw;
+   
+  }
+
+  .inr{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    font-weight: 20px
+  }
+
+  .inr #amount-1{
+    font-size: 2vw;
+    margin-top: -10px;
+  }
+
+
+ 
+
+  #Rectangle{
+    margin-left: 120px;
+    margin-top: 220px;
+
+  }
+
+  .reg{
+    position: absolute;
+    font-size: 2rem;
+    top: 590px;
+    left: 170px;
+  }
+
+  #money-content{
+    font-size: 2vw;
+    margin: 100px;
+    opacity: 0.5;
+    margin-left: 170px;
+    margin-top: -10px;
+}
+
+#money-content-2{
+    /* margin: 10px; */
+    font-size: 3vw;
+    margin-top: -50px;
+    margin-left: 90PX;
+}
+
+.linear-gradient{
+    position: absolute;
+    width: 56vw;
+    height: 60vh;
+    left: 550px;
+    top: 472px;
+     background: radial-gradient(50% 50% at 50% 50%, rgba(242, 242, 242, 0) 0%, #686767 100%);
+    opacity: 0.2;
+    border-radius: 20px;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-left: 600px;
+    font-size: 2vw;
+    font-weight: 30px;
+
+}
+
+
+.box-1{
+  width: 12vw;
+  height: 7vh;
+  border: 3px solid black;
+  margin-left: 10px;
+  margin-top: 10px;
+
+
+}
+.detail{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  margin-top: 5px;
+
+ 
+}
+.linear-box{
+  background-color: #545454;
+  width: 12vw;
+  height: 7vh;
+  margin-left: -50px;
+  margin-top: -40px;
+
+
+}
+
+
+
+.info{
+    display: flex;
+    align-items: center;
+   margin-top: -250px;
+   margin-left: 590px;
+   justify-content: space-evenly;
+   
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    
+     nav{
+      visibility: hidden;
+     }
+
+   
+
+     .photobg{
+      border: 3px solid black;
+      margin-left: 30px;
+
+     }
+
+     .img{
+        height: 15vh;
+        margin-left: 40px;
+     }
+
+     .content{
+      margin-top: -110px;
+      margin-left: 200px;
+     }
+
+     .content h1{
+      font-size: 2rem;
+    }
+  
+    .content p{
+      font-size: 2vw;
+     
+    }
+
+    .inr{
+      margin-left: 10px;
+
+    }
+
+    .inr #amount-1{
+      font-size: 1.5rem;
+      margin-top: -7px;
+    }
+
+    .money{
+       display: flex;
+       flex-direction: column;
+       margin-top: -200px;
+       margin-left: -40px;
+    }
+
+    #Rectangle{
+      width: 30vw;
+      height: 4vh;
+      margin-left: 60px;
+    }
+
+    .reg{
+      font-size: .9rem;
+      margin-top: -259px;
+      margin-left: -140px;
+    }
+
+   #money-content{
+    font-size: 1rem;
+    margin-top: -50px;
+    margin-left: 80px;
+   }
+   
+   #money-content-2{
+    margin-top: -80px;
+    margin-left: 60px;
+   }
+
+   .info{
+     margin-left: 180px;
+     margin-top: -70px;
+
+   }
+
+   .linear-box{
+    width: 12vw;
+    height: 3vh;
+
+   }
+
+   .box-1{
+    margin-top: 3px;
+    margin-left: 5px;
+    width: 12vw;
+    height: 3vh;
+   }
+
+   .detail{
+    font-size: .8rem;
+    margin-top: 1px;
+    margin-left: -2px;
+   }
+
+   .linear-gradient{
+    width: 40vh;
+    height: 30vh;
+    margin-left: -370px;
+    margin-top: -150px;
+   }
+
+   .table{
+    font-size: .8rem;
+    margin-left: 180px;
+    margin-top: 28px;
+   }
+
+   
+
+
+
+
+
+  
+}
+
+@media screen and (max-width:498px) {
+
+  .photobg{
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-top: 140px;
+    border-radius: 10px;
+
+   }
+
+   .img{
+      height: 14vh;
+      margin-left: 30px;
+      margin-top: -60px;
+   }
+
+   .content{
+    margin-top: -90px;
+    margin-left: 70px;
+   }
+
+   .content h1{
+    font-size: 1rem;
+    margin-left: 60px;
+  }
+
+  .content p{
+    font-size: .7rem;
+    margin-left: 60px;
+
+   
+  }
+
+  .inr{
+    margin-left: 40px;
+    margin-top: -30px;
+
+  }
+
+  .inr #amount-1{
+    font-size: 1.2rem;
+    margin-top: -1px;
+  }
+
+  .money{
+     display: flex;
+     flex-direction: column;
+     margin-top: -200px;
+     margin-left: -40px;
+  }
+
+  #Rectangle{
+    width: 30vw;
+    height: 4vh;
+    margin-left: 60px;
+  }
+
+  .reg{
+    font-size: .6rem;
+    margin-top: -350px;
+    margin-left: -145px;
+  }
+
+ #money-content{
+  font-size: .8rem;
+  margin-top: -50px;
+  margin-left: 60px;
+ }
+ 
+ #money-content-2{
+  margin-top: -80px;
+  margin-left: 60px;
+ }
+
+ .info{
+   margin-left: 100px;
+   margin-top: -70px;
+
+ }
+
+ .linear-box{
+  width: 12vw;
+  height: 2.8vh;
+  margin-left: 20px;
+
+ }
+
+ .box-1{
+  margin-top: 4px;
+  margin-left: 1px;
+  width: 12vw;
+  height: 2vh;
+ }
+
+ .detail{
+  font-size: .3rem;
+  margin-top: 1px;
+  margin-left: -2px;
+ }
+
+ .linear-gradient{
+  width: 60vw;
+  height: 60vh;
+  margin-left: -430px;
+  margin-top: -255px;
+ }
+
+ .table{
+  font-size: .8rem;
+  margin-left: 130px;
+  margin-top: 20px;
+ }
+
+  
+}
+
+ 
+
