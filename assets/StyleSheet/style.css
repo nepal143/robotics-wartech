@@ -13,6 +13,9 @@
 
 body {
     overflow-x: hidden;
+    background-image: url(../static/background-image-for-whole-website.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* applying wartech background image to the whole website  */
@@ -171,9 +174,9 @@ nav {
 
 /* -------------------------------------main section starts  here ------------------------------ */
 main {
-    background-image: url(../static/background-image-for-whole-website.png);
+    /* background-image: url(../static/background-image-for-whole-website.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 /* -----------about section starts here ----------- */
@@ -288,12 +291,13 @@ main {
     transition:0.4s;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:500px) {
     .evnet_card {
         margin: 5vw 10vw 10px auto;
     }
 
 }
+
 
 .EventCardBorder {
     position: absolute;
@@ -327,3 +331,136 @@ main {
 .event_image img {
     width: 30vw;
 }
+
+
+/*---------------------------- footer starts here ------------------------ */
+.main {
+    display: flex;
+    flex-direction: column;
+   
+    gap: 0.5em;
+  }
+  .line{
+      width: 90vw;
+      height: 2px;
+      margin: 40px auto;
+      background-color: #000000;
+  }
+  
+  footer{
+    background-color: #595757ad;
+    /* height: auto; */
+    /* margin-bottom: -10px;
+     */
+     /* margin: auto; */
+    width: 100vw;
+    
+  }
+  
+  .flex{
+  
+    justify-content:center ;
+    flex-direction: row;
+    margin: auto  40px;
+    
+  
+  
+  
+  }
+  .footer-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap:  wrap;
+  }
+  @media screen and (max-width:660px) {
+  .footer-top{
+  
+    justify-content: center;
+  } 
+  }
+  
+  .line{
+  width: 90%;
+  height: 2px; 
+  margin: 20px auto;
+  background-color:#000000;
+  
+  }
+  .comment-and-time{
+  display: flex;
+  flex: wrap;
+  width: 70vw;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  }
+  
+  
+  .photo{
+  text-align: center;
+  }
+  .photo p{
+  width: 200px;
+  
+  }
+  
+  
+  .tym {
+  display: flex;
+  margin-bottom: 20px;
+  
+  
+  }
+  .comment-and-time{
+  width: 85vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  }
+  #vector{
+    width: 100px;
+    margin-bottom: 10px;
+    
+  }
+  
+  #tym p{
+    color:#000000;
+  }
+  
+  
+  
+  a{
+    color:#000000;
+    text-decoration: none;
+   
+  
+  }
+  .contacts #in {
+     
+      margin-left: 0;
+  }
+  
+  /* .contacts #fa{
+         margin: 16px 17px 0 35px
+  }
+  .contacts #yu {
+      margin: 10px 20px;
+  } */
+  @media screen and (max-width:370px) {
+    .comment-and-time{
+      justify-content: center;
+    }
+  }
+  .contacts{
+    min-width: 200px;
+    /* width: 500px; */
+  }
+  
+  .social-media{
+  margin: auto 10px;
+  }
+  /* ----------------------------footer ends here ----------------------------- */

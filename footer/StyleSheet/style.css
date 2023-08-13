@@ -28,8 +28,9 @@
       background-color: #595757;
       height: auto;
       width: 100vw;
-      position: absolute;
-      bottom: -2px;
+      /* position: absolute; */
+
+      bottom: 0;
   
       
     }
