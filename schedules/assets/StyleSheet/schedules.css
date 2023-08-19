@@ -262,13 +262,22 @@ grid-row-gap: 8vh;
 }
 .venuer , .timer , .eventnamer{
     width: 100%;
-    font-size: 1rem;
-    text-align:right;
+    font-size: 1.5vw;
+
+    /* text-align:right; */
+}
+.eventnamer{
+    font-size: 2vw;
 }
 .venuel , .timel , .eventnamel{
     width: 100%;
-    font-size: 1rem;
-    text-align:left;
+    font-size: 1.5vw;
+    text-align: right;
+
+    /* text-align:right; */
+}
+.eventnamel{
+    font-size: 2vw;
 }
 .line{
     /* width: calc(100% - 25vw); */
