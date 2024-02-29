@@ -1,180 +1,175 @@
 /* the robotics font nasalization-rg */
 @font-face {
-    font-family: robotics-original;
-    src: url(../../fonts/nasalization-rg.otf);
+  font-family: robotics-original;
+  src: url(../../fonts/nasalization-rg.otf);
 }
 
 /* applying margin and padding 0 and font family to whole website */
 * {
-    font-family: robotics-original;
-    margin: 0;
-    padding: 0;
+  font-family: robotics-original;
+  margin: 0;
+  padding: 0;
+  /* background-color: ; */
 }
 
 body {
-    overflow-x: hidden;
-    background-image: url(../static/background-image-for-whole-website.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 736vh;
+  background-image: url(../static/background-image-for-whole-website.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* applying wartech background image to the whole website  */
 header {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../static/landing-page-background.png);
-    background-size: cover;
-    z-index: 1;
-    overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../static/landing-page-background.png);
+  /* background-size: cover; */
+  /* z-index: 1; */
+  overflow: hidden;
 }
 
 /* creating a radial gradient on the header  */
-.radial-gradient {
+/* .radial-gradient {
     background: radial-gradient(rgba(64, 75, 82, 0), rgba(100, 106, 109, 100%));
     width: 100%;
     height: 100%;
 
 
-}
+} */
 
 /* navbar starts here  */
 nav {
-    width: 100%;
-    z-index: 3;
-    display: grid;
-    position: fixed;
-    place-items: center;
+  width: 100%;
+  z-index: 3;
+  display: grid;
+  position: fixed;
+  place-items: center;
 }
 
 .container {
-    width: 90%;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-
+  width: 90%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .logo img {
-    width: 60px;
+  width: 60px;
 }
 
 .links a {
-    text-decoration: none;
-    color: white;
-    margin: 20px;
+  text-decoration: none;
+  color: white;
+  margin: 20px;
 }
 
 /* navbar ends here */
 
-
-
 /* wartech title for landing page  */
 .wartech {
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 80%;
-    padding-top: 80px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+  padding-top: 80px;
 }
 
 .wartech div {
-
-    font-size: 8vw;
-    color: white;
-    letter-spacing: 20px;
-    -webkit-text-fill-color:
-        transparent;
-    line-height: .9em;
-    -webkit-text-stroke-width: 1px;
-    transition: .5s;
+  font-size: 8vw;
+  color: white;
+  letter-spacing: 20px;
+  -webkit-text-fill-color: transparent;
+  line-height: 0.9em;
+  -webkit-text-stroke-width: 1px;
+  transition: 0.5s;
 }
 
 .wartech div:hover {
-    text-shadow: 10px -4px;
+  text-shadow: 10px -4px;
 }
 
 /* blending the text and translate */
 .title-2 {
-    translate: 3vw;
-    mix-blend-mode: soft-light;
+  translate: 3vw;
+  mix-blend-mode: soft-light;
 }
 
 .title-1 {
-    color: #d9d9d9;
-    mix-blend-mode: difference;
+  color: #d9d9d9;
+  mix-blend-mode: difference;
 }
 
 .title-center {
-    translate: 6vw;
-    font-weight: 500;
+  translate: 6vw;
+  font-weight: 500;
 }
 
-@media screen and (max-width:500px) {
-    .title-center {
+@media screen and (max-width: 500px) {
+  .title-center {
+    translate: 0;
+  }
 
-        translate: 0;
-    }
-
-    .wartech {
-        height: 80vh;
-    }
+  .wartech {
+    height: 80vh;
+  }
 }
 
 /* ----making movile view for the landing page  */
-@media screen and (max-width:800px) {
-    .links {
-        display: none;
-    }
+@media screen and (max-width: 800px) {
+  .links {
+    display: none;
+  }
 
-    .wartech {
-        translate: -20;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
+  .wartech {
+    translate: -20;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 
-    .wartech div {
-        word-wrap: break-word;
-        width: 0;
-        font-size: 4.5em;
-        line-height: 10vh;
+  .wartech div {
+    word-wrap: break-word;
+    width: 0;
+    font-size: 4.5em;
+    line-height: 10vh;
+  }
 
-    }
+  .left1 {
+    translate: -20px 30px;
+  }
 
-    .left1 {
-        translate: -20px 30px;
-    }
+  .left2 {
+    translate: -20px -30px;
+    mix-blend-mode: soft-light;
+  }
 
-    .left2 {
-        translate: -20px -30px;
-        mix-blend-mode: soft-light;
-    }
+  .right1 {
+    translate: -20px 30px;
+  }
 
-    .right1 {
-        translate: -20px 30px;
-    }
+  .right2 {
+    translate: -20px -30px;
+    mix-blend-mode: soft-light;
+  }
 
-    .right2 {
-        translate: -20px -30px;
-        mix-blend-mode: soft-light;
-    }
+  .title-center {
+    text-shadow: 2px -2px;
+    translate: -20px 10px;
 
-    .title-center {
-        text-shadow: 2px -2px;
-        translate: -20px 10px;
-
-        font-weight: 500;
-    }
-
+    font-weight: 500;
+  }
 }
 
 /* -------------------------------------main section starts  here ------------------------------ */
 main {
-    /* background-image: url(../static/background-image-for-whole-website.png);
+  /* background-image: url(../static/background-image-for-whole-website.png);
     background-size: cover;
     background-repeat: no-repeat; */
 }
@@ -185,134 +180,142 @@ main {
 } */
 
 .about-heading {
-    text-align: center;
-    font-size: 8vw;
-    margin: 10vw 0 20px 0;
+  text-align: center;
+  font-size: 8vw;
+  margin: 10vw 0 20px 0;
+  color: white;
 }
 
 .about-para {
-    text-align: left;
-    margin: auto;
-    width: 90%;
-    font-size: 2.5vw;
-    margin-bottom: 8vw;
-    /* text-align: center; */
+  text-align: left;
+  margin: auto;
+  width: 90%;
+  font-size: 2vw;
+  margin-bottom: 8vw;
+  color: white;
+  /* text-align: center; */
 }
 
 .goal {
-    display: flex;
-    text-align: center;
-    width: 90%;
-    padding: 20px 0;
-    border-radius: 15px;
-    margin: auto;
-    background: linear-gradient(rgb(116, 116, 116), rgb(0, 0, 0, 0));
+  display: flex;
+  text-align: center;
+  width: 90%;
+  padding: 20px 0;
+  color: white;
+  border-radius: 15px;
+  margin: auto;
+  background: linear-gradient(rgb(193, 181, 181), rgb(0, 0, 0, 0));
 }
 
 .goal h1 {
-    font-size: 4vw;
+  font-size: 4vw;
+}
+.line1 {
+  background-color: white;
+  width: 1vw;
+  height: 200px;
 }
 
 .goal p {
-    font-size: 2vw
+  font-size: 1.5vw;
 }
 
 .mission,
 .vision {
-    margin: 0 20px;
+  margin: 0 20px;
 }
 
 .about-line {
-    width: 13px;
-    /* height: 80%; */
-    background-color: black;
+  width: 13px;
+  height: 80%;
+  background-color: white;
 }
 
 /* -----------------about section ends here---------------- */
 .event_container {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .event_heading {
-    font-size: 10vw;
-    margin-left: 10vw;
-    transform: rotate(-9deg);
+  font-size: 10vw;
+  margin-left: 30vw;
+  color: #ec7518;
+  /* justify-content: center; */
+  /* transform: rotate(-9deg); */
 }
-
-
 
 /* evnet slider starts here  */
 .EventSlider {
-    display: flex;
-    align-items: center;
-    /* margin-top: 10vw; */
-    width: 90%;
-    margin: 10vw auto;
-    justify-content: center;
-    overflow-y: scroll;
-    rotate: -9deg;
+  display: flex;
+  align-items: center;
+  /* margin-top: 10vw; */
+  width: 90%;
+  margin: 10vw auto;
+  justify-content: center;
+  overflow-y: scroll;
+  /* rotate: -9deg; */
 }
 
 .EventSlider::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .eventSlider-img {
-    width: 30vw;
-    border-radius: 10px;
-    -webkit-user-drag: none;
-    margin: 0px 2vw;
-    transition: 0.2s;
+  width: 30vw;
+  border-radius: 10px;
+  -webkit-user-drag: none;
+  margin: 0px 2vw;
+  transition: 0.2s;
 }
 
 .eventSlider-img:hover {
-    scale: 1.2;
+  scale: 1.2;
+}
+.EventCardBorder {
+  color: #ec7518;
 }
 
 .events_card_container {
-    margin-top: 10vw;
-    width: 100%;
-    padding-bottom: 10vw;
+  margin-top: 10vw;
+  width: 100%;
+  padding-bottom: 10vw;
 }
 
 .evnet_card {
-    width: 60vw;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 30vh; */
-    /* min-height: 30vw;     */
+  width: 60vw;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* height: 30vh; */
+  /* min-height: 30vw;     */
 
-    margin: 15vw 10vw 10px auto;
+  margin: 15vw 10vw 10px auto;
 }
-.evnet_card:hover{
-    translate: -20px 0 ;
-    transition:0.4s;
-}
-
-@media screen and (max-width:500px) {
-    .evnet_card {
-        margin: 5vw 10vw 10px auto;
-    }
-
+.evnet_card:hover {
+  translate: -20px 0;
+  transition: 0.4s;
 }
 
+@media screen and (max-width: 500px) {
+  .evnet_card {
+    margin: 5vw 10vw 10px auto;
+  }
+}
 
 .EventCardBorder {
-    position: absolute;
-    width: 60vw;
-    scale: 1.2;
-
+  position: absolute;
+  width: 60vw;
+  scale: 1.2;
 }
 
 .event_content {
-    margin: 0 2vw 0 1vw;
+  margin: 0 2vw 0 1vw;
 }
 
 .event_name {
-    font-size: 1.5vw;
-
+  font-size: 1.5vw;
 }
 
 /* .event_right_content{
@@ -321,146 +324,126 @@ main {
 .event_discriptoin{
 
 } */
-.event_image_right{
-    margin-right: 5vw;
+.event_image_right {
+  margin-right: 5vw;
 }
 .discription p {
-    font-size: 1.5vw;
+  font-size: 1.5vw;
 }
 
 .event_image img {
-    width: 30vw;
+  width: 30vw;
 }
-
 
 /*---------------------------- footer starts here ------------------------ */
 .main {
-    display: flex;
-    flex-direction: column;
-   
-    gap: 0.5em;
-  }
-  .line{
-      width: 90vw;
-      height: 2px;
-      margin: 40px auto;
-      background-color: #000000;
-  }
-  
-  footer{
-    background-color: #595757ad;
-    /* height: auto; */
-    /* margin-bottom: -10px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5em;
+}
+.line {
+  width: 90vw;
+  height: 2px;
+  margin: 40px auto;
+  background-color: #000000;
+}
+
+footer {
+  background-color: #595757ad;
+  /* height: auto; */
+  /* margin-bottom: -10px;
      */
-     /* margin: auto; */
-    width: 100vw;
-    
-  }
-  
-  .flex{
-  
-    justify-content:center ;
-    flex-direction: row;
-    margin: auto  40px;
-    
-  
-  
-  
-  }
-  .footer-top{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    flex-wrap:  wrap;
-  }
-  @media screen and (max-width:660px) {
-  .footer-top{
-  
+  /* margin: auto; */
+  width: 100vw;
+}
+
+.flex {
+  justify-content: center;
+  flex-direction: row;
+  margin: auto 40px;
+}
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 660px) {
+  .footer-top {
     justify-content: center;
-  } 
   }
-  
-  .line{
+}
+
+.line {
   width: 90%;
-  height: 2px; 
+  height: 2px;
   margin: 20px auto;
-  background-color:#000000;
-  
-  }
-  .comment-and-time{
+  background-color: #000000;
+}
+.comment-and-time {
   display: flex;
   flex: wrap;
   width: 70vw;
   margin: auto;
   align-items: center;
   justify-content: space-between;
-  }
-  
-  
-  .photo{
+}
+
+.photo {
   text-align: center;
-  }
-  .photo p{
+}
+.photo p {
   width: 200px;
-  
-  }
-  
-  
-  .tym {
+}
+
+.tym {
   display: flex;
   margin-bottom: 20px;
-  
-  
-  }
-  .comment-and-time{
+}
+.comment-and-time {
   width: 85vw;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
   align-items: center;
   justify-content: space-between;
-  }
-  #vector{
-    width: 100px;
-    margin-bottom: 10px;
-    
-  }
-  
-  #tym p{
-    color:#000000;
-  }
-  
-  
-  
-  a{
-    color:#000000;
-    text-decoration: none;
-   
-  
-  }
-  .contacts #in {
-     
-      margin-left: 0;
-  }
-  
-  /* .contacts #fa{
+}
+#vector {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+#tym p {
+  color: #000000;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+.contacts #in {
+  margin-left: 0;
+}
+
+/* .contacts #fa{
          margin: 16px 17px 0 35px
   }
   .contacts #yu {
       margin: 10px 20px;
   } */
-  @media screen and (max-width:370px) {
-    .comment-and-time{
-      justify-content: center;
-    }
+@media screen and (max-width: 370px) {
+  .comment-and-time {
+    justify-content: center;
   }
-  .contacts{
-    min-width: 200px;
-    /* width: 500px; */
-  }
-  
-  .social-media{
+}
+.contacts {
+  min-width: 200px;
+  /* width: 500px; */
+}
+
+.social-media {
   margin: auto 10px;
-  }
-  /* ----------------------------footer ends here ----------------------------- */
+}
+/* ----------------------------footer ends here ----------------------------- */
