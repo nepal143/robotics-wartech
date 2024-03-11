@@ -40,7 +40,8 @@ nav {
     display: flex;
 } */
 
-.logo img {
+.logo {
+  color: white;
   width: 60px;
 }
 
