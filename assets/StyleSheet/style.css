@@ -258,6 +258,7 @@ main {
   font-size: 10vw;
   margin-left: 30vw;
   color: #81ffff;
+
   /* justify-content: center; */
   /* transform: rotate(-9deg); */
 }
@@ -329,7 +330,7 @@ main {
 .EventCardBorder {
   position: absolute;
   width: 60vw;
-  scale: 1.2;
+  scale: 1.4;
 }
 
 .event_content {

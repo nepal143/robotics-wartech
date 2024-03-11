@@ -10,11 +10,13 @@
 
 /* applying background image to while page  */
 body {
-  background-image: url(/assets/static/background-image-for-whole-website.png);
+  background-image: url(./assets/static/background-image-for-whole-website.png);
   background-repeat: no-repeat;
   width: 100vw;
-  background-size: cover;
-  overflow-x: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: black;
+  /* overflow-x: hidden; */
 }
 /* navbar starts here  */
 nav {
@@ -32,6 +34,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
+  color: white;
 }
 /* .jointsec{
     display: flex;
@@ -43,7 +46,7 @@ nav {
 
 .links a {
   text-decoration: none;
-  color: black;
+  color: white;
   margin: 20px;
 }
 
@@ -56,7 +59,7 @@ nav {
 .heading {
   text-align: center;
   font-size: 400%;
-  color: black;
+  color: #81ffff;
   padding-top: 200px;
 }
 

@@ -30,6 +30,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
+  color: white;
 }
 
 .logo img {
@@ -46,8 +47,9 @@ nav {
 
 .days {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
+  justify-content: center;
   width: 60vw;
   margin: auto;
   height: 20vw;
@@ -59,7 +61,7 @@ nav {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  width: 10vw;
+  width: 20vw;
   height: 4vw;
   /* border: solid black 2px  ; */
   border-radius: 40px;
@@ -71,7 +73,7 @@ nav {
   scale: 1.1;
 }
 .stoke {
-  width: 10vw;
+  width: 20vw;
   height: 4vw;
   position: absolute;
   border: solid #81ffff 0.2vw;
@@ -141,13 +143,13 @@ nav {
   background-color: #81ffff;
   width: 0.4vw;
   translate: 0 -20px;
-  height: 1200px;
+  height: 1500px;
   margin: 0 calc(50vw - 4px);
 }
 .linebottom {
   margin-top: 1200px;
   width: 500px;
-  translate: -48px -2px;
+  translate: -47px 290px;
 }
 .linebottom-left {
   display: inline-block;
@@ -204,9 +206,9 @@ nav {
   margin-bottom: 100px;
 }
 .schedule-page-right {
-  width: 17vw;
+  width: 20vw;
   padding: 10px 20px;
-  height: 8vw;
+  height: 12vw;
   display: flex;
   color: white;
   align-items: center;
@@ -216,9 +218,9 @@ nav {
   background: #545454;
 }
 .schedule-page-left {
-  width: 17vw;
+  width: 23vw;
   padding: 10px 20px;
-  height: 8vw;
+  height: 12vw;
   display: flex;
   color: white;
   align-items: center;
@@ -229,10 +231,10 @@ nav {
 }
 .schedule-page-stroke-right {
   position: absolute;
-  width: 17vw;
-  translate: -7% -110%;
+  width: 20vw;
+  translate: -7% -104%;
   padding: 10px 30px;
-  height: 8vw;
+  height: 12vw;
   border: solid #81ffff 0.2vw;
 }
 .quoteright-top {
@@ -251,10 +253,10 @@ nav {
 
 .schedule-page-stroke-left {
   position: absolute;
-  width: 17vw;
-  translate: 5% -110%;
+  width: 22vw;
+  translate: 5% -105%;
   padding: 10px 30px;
-  height: 8vw;
+  height: 12vw;
   border: solid #81ffff 0.2vw;
 }
 .venuer,
