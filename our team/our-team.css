@@ -51,6 +51,88 @@ nav {
   margin: 20px;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* background-color: #333; */
+  padding: 10px;
+  color: white;
+  margin-right: 40px;
+
+  /* background: #911617; */
+}
+.linksToggle {
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+  /* background: #81ffff; */
+}
+
+.linksToggle {
+  display: none;
+  flex-direction: column;
+}
+
+.linksToggle a {
+  color: white;
+  text-decoration: none;
+  padding: 14px;
+  display: none;
+}
+
+.linksToggle.show {
+  display: flex;
+  opacity: 4;
+  height: 175px;
+
+  /* background-color: #650b0b; */
+}
+
+.toggle-btn {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.bar {
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  display: none;
+}
+
+/* media query */
+
+@media screen and (max-width: 900px) {
+  .bar {
+    display: inline;
+  }
+  .links {
+    display: none;
+  }
+  .contact-btn {
+    display: none;
+  }
+  .linksToggle {
+    position: absolute;
+    /* padding: ; */
+
+    height: 30vh;
+
+    margin-right: -80px;
+    /* width: %; */
+    /* background: linear-gradient(rgb(100, 128, 142), rgb(104, 122, 124)); */
+    mix-blend-mode: soft-light;
+  }
+
+  .linksToggle a {
+    display: block;
+  }
+}
 /* navbar ends here */
 
 /* background image for whole website  */

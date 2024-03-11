@@ -13,6 +13,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+  background-color: black;
 }
 /* navbar starts here  */
 nav {
@@ -35,6 +36,8 @@ nav {
 
 .logo img {
   width: 60px;
+  color: white;
+  text-decoration: none;
 }
 
 .links a {
