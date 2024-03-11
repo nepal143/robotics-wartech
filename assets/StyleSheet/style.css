@@ -4,6 +4,10 @@
   src: url(../../fonts/nasalization-rg.otf);
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 /* applying margin and padding 0 and font family to whole website */
 * {
   font-family: robotics-original;
