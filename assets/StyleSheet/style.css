@@ -85,7 +85,7 @@ nav {
   display: flex;
   flex-direction: column;
   margin-top: 22px;
-  background: #81ffff;
+  /* background: #81ffff; */
 }
 
 .linksToggle {
@@ -144,7 +144,8 @@ nav {
 
     margin-right: -80px;
     /* width: %; */
-    background: linear-gradient(rgb(100, 128, 142), rgb(104, 122, 124));
+    /* background: linear-gradient(rgb(100, 128, 142), rgb(104, 122, 124)); */
+    mix-blend-mode: soft-light;
   }
 
   .linksToggle a {
@@ -306,6 +307,34 @@ main {
   min-height: 50vh;
   align-items: center;
   background: radial-gradient(rgb(0, 0, 0, 0.7), rgb(49, 49, 49, 0.7));
+}
+.mission,
+.vision {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.mission.visible,
+.vision.visible {
+  opacity: 1;
+}
+
+#content {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#content.visible {
+  opacity: 1;
+}
+.about-heading {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.about-heading.visible {
+  opacity: 1;
+  transform: translateX(10px);
 }
 
 .goal h1 {
