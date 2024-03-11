@@ -489,12 +489,12 @@ a {
 
   scale: 1.2;
   /* width: 3vw; */
-  width: 16vw;
+  width: 20vw;
 }
 .register1 {
   /* margin-top: 10px; */
   margin: 10px;
-  font-size: 1.4vw;
+  font-size: 1.6vw;
   /* font-size: 10px; */
 }
 /* @media screen and (max-width: 970px) {
