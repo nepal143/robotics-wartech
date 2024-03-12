@@ -4,8 +4,8 @@
   src: url(../../fonts/nasalization-rg.otf);
 }
 
-html{
-  scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 /* applying margin and padding 0 and font family to whole website */
@@ -441,6 +441,30 @@ main {
   .goal {
     min-height: 10vh;
   }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    /* Set the width of the scrollbar */
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #888;
+    cursor: pointer; /* Color of the scrollbar track */
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #81ffff; /* Color of the scrollbar handle */
+    border-radius: 5px;
+    /* Rounded corners for the scrollbar handle */
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #81ffff;
+    cursor: pointer; /* Color of the scrollbar handle on hover */
+  }
 }
 
 .EventCardBorder {
@@ -654,4 +678,28 @@ a {
     opacity: 1;
     scale: 1.1;
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  /* Set the width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+  cursor: pointer; /* Color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #81ffff; /* Color of the scrollbar handle */
+  border-radius: 5px;
+  /* Rounded corners for the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #81ffff;
+  cursor: pointer; /* Color of the scrollbar handle on hover */
 }

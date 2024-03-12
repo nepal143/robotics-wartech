@@ -11,12 +11,12 @@
 /* applying background image to while page  */
 body {
   background-image: url(./assets/static/background-image-for-whole-website.png);
-  background-repeat: no-repeat;
-  width: 100vw;
-  background-size: contain;
+  /* background-repeat: no-repeat; */
+  /* width: 100vw; */
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
-  /* overflow-x: hidden; */
+  /* overflow: hidden; */
 }
 /* navbar starts here  */
 nav {
@@ -132,7 +132,17 @@ nav {
   .linksToggle a {
     display: block;
   }
+  body {
+    /* background-image: url(./assets/static/background-image-for-whole-website.png); */
+    /* background-repeat: no-repeat; */
+    /* width: 100vw; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    /* overflow: hidden; */
+  }
 }
+
 /* navbar ends here */
 
 /* background image for whole website  */
@@ -162,7 +172,7 @@ nav {
   margin: 80px;
   background: #d9d9d9;
 }
-@media screen and (max-width) {
+@media screen and (max-width: 850px) {
   .memberpage {
     margin: 40;
   }
@@ -171,6 +181,7 @@ nav {
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
   width: 100%;
 }
+
 .DP {
   width: 150px;
   height: 150px;
